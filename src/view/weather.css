@@ -1,0 +1,13 @@
+.weather__container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.weather__img {
+    display: block;
+    max-width: 100px;
+}
