@@ -10,7 +10,6 @@ function App() {
   const handleRefresh = () => {
       setRefreshKey(prevKey => prevKey + 1)
   };
-  console.log(refreshKey)
   
   return (
     <div className="App">

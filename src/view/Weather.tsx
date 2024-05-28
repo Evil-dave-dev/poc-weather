@@ -25,14 +25,16 @@ export const Weather = () => {
     
     const CACHE_DURATION = 600000;
 
+
     useEffect(() => {
         if (navigator.geolocation) {
-            navigator.geolocation.watchPosition(
+            navigator.geolocation.getCurrentPosition(
                 (position) => {
                     setPosition({
                         latitude: position.coords.latitude,
                         longitude: position.coords.longitude,
                     })
+                    setLoading(true)
                 },
                 (err) => {
                     setError(err)
